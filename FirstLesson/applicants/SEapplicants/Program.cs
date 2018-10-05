@@ -17,14 +17,26 @@ namespace SEapplicants
                 applicants[i] = applicantsStrs[i].Split(";", StringSplitOptions.RemoveEmptyEntries);
             }
 
-
-            Console.WriteLine(GetTotalNumber(applicants));
-            Console.WriteLine(string.Join("; ", GetCampusList(applicants)));
-            Console.WriteLine(string.Join("; ", GetApplicantsByYear(applicants)));
-
-
-
-            Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("введите команду\n1 всего заявлений\n2 люди из общежития\n3 распределение по курсам");
+                string input = Console.ReadLine().Trim();
+                switch (input)
+                {
+                    case "1":
+                        Console.WriteLine(GetTotalNumber(applicants));
+                        break;
+                    case "2":
+                        Console.WriteLine(String.Join("\n", GetCampusList(applicants)));
+                        break;
+                    case "3":
+                        Console.WriteLine(String.Join(" ", GetApplicantsByYear(applicants)));
+                        break;
+                    default:
+                        Console.WriteLine("Такой команды нет");
+                        break;
+                }
+            }
         }
 
         public static int GetTotalNumber(string[][] people)

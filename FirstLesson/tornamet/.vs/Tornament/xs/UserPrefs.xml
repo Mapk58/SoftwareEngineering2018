@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{A3CE3173-3A5C-41C3-A905-EFD077BF6FB7}|Модульные тесты">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TornamenTests/UnitTestPair.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tornament/Program.cs">
     <Files>
-      <File FileName="Tornament/Program.cs" Line="164" Column="1" />
-      <File FileName="TornamenTests/UnitTestPair.cs" Line="109" Column="1" />
+      <File FileName="Tornament/Program.cs" Line="5" Column="25" />
+      <File FileName="TornamenTests/UnitTestPair.cs" Line="132" Column="1" />
       <File FileName="TornamenTests/UnitTestPairList.txt" Line="1" Column="62" />
       <File FileName="Tornament/ParticipantsList.txt" Line="1" Column="1" />
     </Files>
@@ -10,13 +10,18 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/leon/Projects/Github/FirstLesson/tornamet/TornamenTests/UnitTestPair.cs" relfile="TornamenTests/UnitTestPair.cs" line="109" column="1" />
-      <Breakpoint file="/Users/leon/Projects/Github/FirstLesson/tornamet/Tornament/Program.cs" relfile="Tornament/Program.cs" line="164" column="1" />
-      <Breakpoint file="/Users/leon/Projects/Github/FirstLesson/tornamet/Tornament/Program.cs" relfile="Tornament/Program.cs" line="170" column="1" />
-      <Breakpoint file="/Users/leon/Projects/Github/FirstLesson/tornamet/Tornament/Program.cs" relfile="Tornament/Program.cs" line="165" column="1" />
+      <Breakpoint file="/Users/leon/Projects/Github/FirstLesson/tornamet/TornamenTests/UnitTestPair.cs" relfile="TornamenTests/UnitTestPair.cs" line="111" column="1" />
+      <Breakpoint file="/Users/leon/Projects/Github/FirstLesson/tornamet/Tornament/Program.cs" relfile="Tornament/Program.cs" line="163" column="1" />
+      <Breakpoint file="/Users/leon/Projects/Github/FirstLesson/tornamet/Tornament/Program.cs" relfile="Tornament/Program.cs" line="169" column="1" />
+      <Breakpoint file="/Users/leon/Projects/Github/FirstLesson/tornamet/Tornament/Program.cs" relfile="Tornament/Program.cs" line="176" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../Tornament/Program.cs" line="162" offsetX="539" offsetY="2448" expression="PairWinner" liveUpdate="True" />
+    <Watch file="../../../Tornament/Program.cs" line="210" offsetX="364" offsetY="3312" expression="inside" liveUpdate="True" />
+    <Watch file="../../../Tornament/Program.cs" line="220" offsetX="312" offsetY="3492" expression="inside" liveUpdate="True" />
+    <Watch file="../../../Tornament/Program.cs" line="172" offsetX="565" offsetY="2628" expression="CurrentLevelWinners" liveUpdate="True" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.ItemProperties.Tornament PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.TornamentTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
