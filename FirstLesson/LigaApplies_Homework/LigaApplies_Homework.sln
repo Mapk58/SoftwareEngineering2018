@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LigaApplies_Homework", "LigaApplies_Homework\LigaApplies_Homework.csproj", "{54B0084C-D662-4670-820E-C272EC9777B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90F8CF6A-CD23-453E-911F-A31A6FD256D4}"
+	ProjectSection(SolutionItems) = preProject
+		NUnitTestClass.cs = NUnitTestClass.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54B0084C-D662-4670-820E-C272EC9777B0}.Debug|x86.ActiveCfg = Debug|x86
+		{54B0084C-D662-4670-820E-C272EC9777B0}.Debug|x86.Build.0 = Debug|x86
+		{54B0084C-D662-4670-820E-C272EC9777B0}.Release|x86.ActiveCfg = Release|x86
+		{54B0084C-D662-4670-820E-C272EC9777B0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
