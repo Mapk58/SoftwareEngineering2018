@@ -1,0 +1,11 @@
+/Users/leon/Projects/SEapplicants/SEapplicants/bin/Debug/netcoreapp2.1/SEapplicants.deps.json
+/Users/leon/Projects/SEapplicants/SEapplicants/bin/Debug/netcoreapp2.1/SEapplicants.runtimeconfig.json
+/Users/leon/Projects/SEapplicants/SEapplicants/bin/Debug/netcoreapp2.1/SEapplicants.runtimeconfig.dev.json
+/Users/leon/Projects/SEapplicants/SEapplicants/bin/Debug/netcoreapp2.1/SEapplicants.dll
+/Users/leon/Projects/SEapplicants/SEapplicants/bin/Debug/netcoreapp2.1/SEapplicants.pdb
+/Users/leon/Projects/SEapplicants/SEapplicants/obj/Debug/netcoreapp2.1/SEapplicants.csprojAssemblyReference.cache
+/Users/leon/Projects/SEapplicants/SEapplicants/obj/Debug/netcoreapp2.1/SEapplicants.csproj.CoreCompileInputs.cache
+/Users/leon/Projects/SEapplicants/SEapplicants/obj/Debug/netcoreapp2.1/SEapplicants.AssemblyInfoInputs.cache
+/Users/leon/Projects/SEapplicants/SEapplicants/obj/Debug/netcoreapp2.1/SEapplicants.AssemblyInfo.cs
+/Users/leon/Projects/SEapplicants/SEapplicants/obj/Debug/netcoreapp2.1/SEapplicants.dll
+/Users/leon/Projects/SEapplicants/SEapplicants/obj/Debug/netcoreapp2.1/SEapplicants.pdb

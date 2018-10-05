@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{CBE0B69D-FBE3-4E80-83CA-B4624617BBFE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tornament/Program.cs">
+    <Files>
+      <File FileName="Tornament/Program.cs" Line="115" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Tornament PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.TornamentTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
