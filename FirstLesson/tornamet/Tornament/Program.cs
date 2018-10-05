@@ -31,10 +31,10 @@ namespace Tornament
                         Tornaments.Add(CreateT());
                         break;
                     case "2":
-                        AddPairWinner(ref Tornaments);
+                        AddPairWinner(Tornaments);
                         break;
                     case "3":
-                        WriteTornament(ref Tornaments);
+                        WriteTornament(Tornaments);
                         break;
                     default:
                         Console.WriteLine("Нет такого действия.\nНажмите любую клавийу для возврата");
@@ -74,11 +74,11 @@ namespace Tornament
             return People;
         }
 
-        public static void AddPairWinner(ref List<Tornament> Tornaments)
+        public static void AddPairWinner(List<Tornament> Tornaments)
         {
             Console.WriteLine("Напишите имя турнира: ");
             string nameT = Console.ReadLine().Trim();
-            int id = GetTornamentId(nameT, ref Tornaments);
+            int id = GetTornamentId(nameT, Tornaments);
             if (id == -1)
             {
                 Console.WriteLine("Нет такого турнира");
@@ -90,11 +90,11 @@ namespace Tornament
             Tornaments[id].AddPairWinner(nameP);
         }
 
-        public static void WriteTornament(ref List<Tornament> Tornaments)
+        public static void WriteTornament(List<Tornament> Tornaments)
         {
             Console.WriteLine("Напишите имя турнира");
             string nameT = Console.ReadLine().Trim();
-            int id = GetTornamentId(nameT, ref Tornaments);
+            int id = GetTornamentId(nameT, Tornaments);
             if (id == -1)
             {
                 Console.WriteLine("Нет такого турнира");
@@ -103,7 +103,7 @@ namespace Tornament
             Tornaments[id].WriteTornament();
         }
 
-        public static int GetTornamentId(string TornamentName, ref List<Tornament> Tornaments)
+        public static int GetTornamentId(string TornamentName, List<Tornament> Tornaments)
         {
             int curId = -1;
             for (var i = 0; i < Tornaments.Count(); i++)
@@ -124,8 +124,8 @@ namespace Tornament
     {
         public string Name;// { get; set; }
         public string[,] ParticipantsPairs;
-        public string[] CurrentLevelWinners = { };
-        public string[] CurrentLevelLoosers = { };
+        public List<String> CurrentLevelWinners = new List<string>();
+        public List<String> CurrentLevelLoosers = new List<string>();
 
 
         public Tornament(string name, string[] participants)
@@ -136,7 +136,7 @@ namespace Tornament
 
         public static string[,] Pair(string[] people)
         {
-            if ((people.Length == 0) || (people.Length & (people.Length - 1)) != 0)
+            if ((people.Length != 0) && (people.Length & (people.Length - 1)) != 0)
             {
                 throw new ArgumentException("A list of people to pair should have length of power of 2");
             }
@@ -154,9 +154,9 @@ namespace Tornament
         public void Evaluate()
         {
             WriteTornament();
-            ParticipantsPairs = Pair(CurrentLevelWinners);
+            ParticipantsPairs = Pair(CurrentLevelWinners.ToArray());
 
-            CurrentLevelWinners = new string[] { };
+            CurrentLevelWinners.Clear();
         }
 
         public void AddPairWinner(string PairWinner)
@@ -169,6 +169,7 @@ namespace Tornament
             }
             else if (CheckPerson(PairWinner))
             {
+                CurrentLevelWinners.Append("kkk");
                 CurrentLevelWinners.Append(PairWinner);
                 string looser = ParticipantsPairs[GetPersonIndex(PairWinner)[0], Math.Abs(GetPersonIndex(PairWinner)[1] - 1)];
                 CurrentLevelLoosers.Append(looser);
@@ -178,7 +179,7 @@ namespace Tornament
                 Console.WriteLine("Такого человека нет в списке");
             }
             //если это был последний то переходи на след уровень
-            if (CurrentLevelWinners.Length == ParticipantsPairs.GetLength(0))
+            if (CurrentLevelWinners.Capacity == ParticipantsPairs.GetLength(0))
             {
                 Evaluate();
             }
