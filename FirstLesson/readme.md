@@ -1,1 +1,1 @@
-First lesson of Margelov Vitaly
+First lesson of Khuriev David

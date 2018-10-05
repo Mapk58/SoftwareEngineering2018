@@ -1,1 +1,1 @@
-Forth lesson of Margelov Vitaly
+Forth lesson of Khuriev David
